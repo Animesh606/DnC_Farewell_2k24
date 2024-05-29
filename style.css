@@ -1,0 +1,116 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+    background: #363062;
+    color: #d4d4d4;
+    /* margin: auto; */
+    padding: 0;
+    overflow-x: hidden;
+}
+.container {
+    width: 90vw;
+    margin: auto;
+    padding: 0 0px 1px 0px;
+    background: #57a6a1;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+.header {
+    text-align: center;
+    /* padding: 20px; */
+    overflow: hidden;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    max-height: 30vh;
+}
+.header img {
+    width: 100%;
+}
+.header h1 {
+    font-size: 2em;
+    color: wheat;
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+.header p {
+    font-size: 15px;
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 5px black;
+    word-spacing: 4px;
+}
+.event-details {
+    background: #36454f;
+    padding: 10px;
+    width: 50vw;
+    border-radius: 10px;
+    margin: 20px auto;
+    color: #ffffff;
+}
+.event-details h2 {
+    text-align: center;
+}
+.event-details p {
+    transform: translate(-25%, -400%);
+    height: 3px;
+    border-radius: 20px;
+    margin: auto;
+    width: 8vw;
+    background-color: white;
+}
+.event-details code {
+    display: block;
+    white-space: pre-wrap;
+    line-height: 1.5;
+}
+.slider {
+    position: relative;
+    overflow: hidden;
+    /* height: 50px; */
+    text-align: center;
+    background: #444;
+}
+.slider div {
+    display: flex;
+    animation: slide 10s infinite;
+}
+.slider p {
+    min-width: 100%;
+    text-align: center;
+    /* line-height: 50px; */
+    font-size: 15px;
+    color: #ffffff;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(-400%);
+    }
+}
+.mobile-message {
+    display: none;
+    text-align: center;
+    color: #d4d4d4;
+    font-size: 1.5em;
+    padding: 20px;
+}
+@media (max-width: 600px) {
+    .container {
+        display: none;
+    }
+    .mobile-message {
+        display: block;
+    }
+}
