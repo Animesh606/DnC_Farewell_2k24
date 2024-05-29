@@ -32,24 +32,24 @@ function showName() {
 
 function getStartPosition(direction) {
     const startPosition = {
-        top: '-36%',
+        top: '-40%',
         left: '40%'
     };
     switch (direction) {
         case 'top':
-            startPosition.top = '-10%';
+            startPosition.top = '-100%';
             startPosition.left = '50%';
             break;
         case 'right':
-            startPosition.top = '50%';
+            startPosition.top = '10%';
             startPosition.left = '110%';
             break;
         case 'bottom':
-            startPosition.top = '110%';
+            startPosition.top = '50%';
             startPosition.left = '50%';
             break;
         case 'left':
-            startPosition.top = '50%';
+            startPosition.top = '-70%';
             startPosition.left = '-10%';
             break;
     }
@@ -58,7 +58,7 @@ function getStartPosition(direction) {
 
 function getCenterPosition() {
     return {
-        top: '-36%',
+        top: '-40%',
         left: '40%'
     };
 }

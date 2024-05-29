@@ -46,11 +46,12 @@ body {
 
 .event-details {
     background: #36454f;
-    padding: 10px;
+    padding: 5px;
     width: 50vw;
     border-radius: 10px;
     margin: 20px auto;
     color: #ffffff;
+    z-index: 5;
 }
 
 .event-details h2 {
@@ -85,6 +86,7 @@ body {
     font-size: 2em;
     color: #4dd548;
     transition: all 1s ease;
+    z-index: 2;
 }
 
 .mobile-message {
